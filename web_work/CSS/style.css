@@ -1,1 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  body{
+    text-align: center;
+  }
+  .class-main {
+    border: 1px solid red;
+    background-color: antiquewhite;
+    height: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .main-box {
+    width: 395px;
+    height: 200px;
+    border-style: solid;
+    background-color: rgb(160, 157, 157);
+    margin: 5px;
+  }
+  .main-boxe{
+    width: 50px;
+    padding: 10px;
+    background-color: rgb(229, 193, 32);
+    float: right;
+    text-align: center;
 
+  }
+  .main-boxee{
+    width: 50px;
+    padding: 10px;
+    background-color: rgb(215, 162, 69);
+    float: right;
+    text-align: center;
+
+  }
+  .main-boxeee{
+    width: 50px;
+    padding: 10px;
+    background-color: rgb(228, 183, 218);
+    float: right;
+    text-align: center;
+
+  }
+  p{
+    margin-left: 5px;
+    margin-top: 40px;
+  }
+  
+  @media screen and (max-width:868px) {
+   
+  
+    #main-box {
+      width: calc(100% - 15px); /* Set width to full when screen size reduces */
+      margin-top: 5px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .main-box {
+      width: calc(100% - 10px); /* Two boxes in a row with margins */
+      margin: 5px;
+    }
+
+    #main-box {
+        width: calc(100% - 10px); /* Set width to full when screen size reduces */
+        margin-top: 5px;
+      }
+  }
+  
